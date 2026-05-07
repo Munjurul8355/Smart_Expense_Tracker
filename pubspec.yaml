@@ -1,0 +1,72 @@
+name: expense_tracker
+description: Smart Expense Tracker App with Firebase Backend
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.3.0
+  firebase_auth: ^5.1.4
+  cloud_firestore: ^5.2.1
+
+  # State Management
+  provider: ^6.1.5+1
+
+  # UI & Utilities
+  fl_chart: ^0.65.0
+  intl: ^0.18.1
+  excel: ^4.0.6
+  shared_preferences: ^2.5.4
+  pdf: ^3.10.7
+  printing: ^5.12.0
+  path_provider: ^2.1.2
+  cupertino_icons: ^1.0.2
+  image_picker: ^1.2.1
+  share_plus: ^7.2.1
+
+  # Splash Screen
+  flutter_native_splash: ^2.3.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo1.png
+
+
+# ─── App Launcher Icon ────────────────────────────────────────────────────────
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo1.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#0D4EA6"
+  adaptive_icon_foreground: "assets/images/logo1.png"
+  web:
+    generate: false
+  windows:
+    generate: false
+
+# ─── Splash Screen ────────────────────────────────────────────────────────────
+flutter_native_splash:
+  color: "#0D4EA6"
+  image: assets/images/logo1.png
+  color_dark: "#0D4EA6"
+  image_dark: assets/images/logo1.png
+  android: true
+  ios: true
+  android_12:
+    image: assets/images/logo1.png
+    color: "#0D4EA6"
+    icon_background_color: "#0D4EA6"
